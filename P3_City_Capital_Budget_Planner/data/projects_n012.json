@@ -1,0 +1,89 @@
+{
+ "budget_10k": 232,
+ "projects": [
+  {
+   "id": 0,
+   "name": "Science lab, school 18",
+   "category": "Schools",
+   "cost_10k": 43,
+   "benefit": 54
+  },
+  {
+   "id": 1,
+   "name": "Science lab, school 8",
+   "category": "Schools",
+   "cost_10k": 6,
+   "benefit": 10
+  },
+  {
+   "id": 2,
+   "name": "Splash pad, park 10",
+   "category": "Parks",
+   "cost_10k": 120,
+   "benefit": 129
+  },
+  {
+   "id": 3,
+   "name": "Bike lane on Main St",
+   "category": "Roads",
+   "cost_10k": 72,
+   "benefit": 115
+  },
+  {
+   "id": 4,
+   "name": "LED retrofit, zone 17",
+   "category": "Energy",
+   "cost_10k": 29,
+   "benefit": 23
+  },
+  {
+   "id": 5,
+   "name": "Digital lab, branch 28",
+   "category": "Libraries",
+   "cost_10k": 46,
+   "benefit": 25
+  },
+  {
+   "id": 6,
+   "name": "Bus shelters, route 28",
+   "category": "Transit",
+   "cost_10k": 53,
+   "benefit": 85
+  },
+  {
+   "id": 7,
+   "name": "Solar canopy, civic site 20",
+   "category": "Energy",
+   "cost_10k": 31,
+   "benefit": 41
+  },
+  {
+   "id": 8,
+   "name": "Resurface Cedar Ln",
+   "category": "Roads",
+   "cost_10k": 23,
+   "benefit": 39
+  },
+  {
+   "id": 9,
+   "name": "Storm drain at Cedar Ln",
+   "category": "Water",
+   "cost_10k": 9,
+   "benefit": 25
+  },
+  {
+   "id": 10,
+   "name": "Signal upgrade at Main St & 5th",
+   "category": "Roads",
+   "cost_10k": 112,
+   "benefit": 84
+  },
+  {
+   "id": 11,
+   "name": "Storm drain at Main St",
+   "category": "Water",
+   "cost_10k": 37,
+   "benefit": 40
+  }
+ ]
+}

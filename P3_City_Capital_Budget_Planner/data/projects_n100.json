@@ -1,0 +1,705 @@
+{
+ "budget_10k": 2091,
+ "projects": [
+  {
+   "id": 0,
+   "name": "Trail extension, park 4",
+   "category": "Parks",
+   "cost_10k": 62,
+   "benefit": 38
+  },
+  {
+   "id": 1,
+   "name": "Solar canopy, civic site 29",
+   "category": "Energy",
+   "cost_10k": 122,
+   "benefit": 144
+  },
+  {
+   "id": 2,
+   "name": "Fire station 16 renovation",
+   "category": "Public Safety",
+   "cost_10k": 104,
+   "benefit": 125
+  },
+  {
+   "id": 3,
+   "name": "Roof replacement, school 27",
+   "category": "Schools",
+   "cost_10k": 17,
+   "benefit": 36
+  },
+  {
+   "id": 4,
+   "name": "Storm drain at Pine Ave",
+   "category": "Water",
+   "cost_10k": 68,
+   "benefit": 118
+  },
+  {
+   "id": 5,
+   "name": "Safe crossing near school 19",
+   "category": "Schools",
+   "cost_10k": 17,
+   "benefit": 27
+  },
+  {
+   "id": 6,
+   "name": "Signal upgrade at Harbor Dr & 5th",
+   "category": "Roads",
+   "cost_10k": 32,
+   "benefit": 40
+  },
+  {
+   "id": 7,
+   "name": "LED retrofit, zone 24",
+   "category": "Energy",
+   "cost_10k": 48,
+   "benefit": 70
+  },
+  {
+   "id": 8,
+   "name": "Resurface Pine Ave",
+   "category": "Roads",
+   "cost_10k": 34,
+   "benefit": 41
+  },
+  {
+   "id": 9,
+   "name": "Signal upgrade at Harbor Dr & 5th",
+   "category": "Roads",
+   "cost_10k": 90,
+   "benefit": 73
+  },
+  {
+   "id": 10,
+   "name": "Street lighting on Pine Ave",
+   "category": "Public Safety",
+   "cost_10k": 33,
+   "benefit": 86
+  },
+  {
+   "id": 11,
+   "name": "Trail extension, park 7",
+   "category": "Parks",
+   "cost_10k": 39,
+   "benefit": 23
+  },
+  {
+   "id": 12,
+   "name": "Digital lab, branch 26",
+   "category": "Libraries",
+   "cost_10k": 35,
+   "benefit": 28
+  },
+  {
+   "id": 13,
+   "name": "Safe crossing near school 2",
+   "category": "Schools",
+   "cost_10k": 58,
+   "benefit": 46
+  },
+  {
+   "id": 14,
+   "name": "Filter upgrade, plant 22",
+   "category": "Water",
+   "cost_10k": 23,
+   "benefit": 33
+  },
+  {
+   "id": 15,
+   "name": "Bus shelters, route 10",
+   "category": "Transit",
+   "cost_10k": 50,
+   "benefit": 64
+  },
+  {
+   "id": 16,
+   "name": "Digital lab, branch 8",
+   "category": "Libraries",
+   "cost_10k": 11,
+   "benefit": 9
+  },
+  {
+   "id": 17,
+   "name": "Signal upgrade at Main St & 5th",
+   "category": "Roads",
+   "cost_10k": 31,
+   "benefit": 27
+  },
+  {
+   "id": 18,
+   "name": "Safe crossing near school 2",
+   "category": "Schools",
+   "cost_10k": 63,
+   "benefit": 46
+  },
+  {
+   "id": 19,
+   "name": "Bus shelters, route 30",
+   "category": "Transit",
+   "cost_10k": 17,
+   "benefit": 11
+  },
+  {
+   "id": 20,
+   "name": "Bus shelters, route 6",
+   "category": "Transit",
+   "cost_10k": 69,
+   "benefit": 47
+  },
+  {
+   "id": 21,
+   "name": "Bike lane on Mill Rd",
+   "category": "Roads",
+   "cost_10k": 27,
+   "benefit": 37
+  },
+  {
+   "id": 22,
+   "name": "Storm drain at Elm St",
+   "category": "Water",
+   "cost_10k": 110,
+   "benefit": 83
+  },
+  {
+   "id": 23,
+   "name": "Roof replacement, school 30",
+   "category": "Schools",
+   "cost_10k": 40,
+   "benefit": 42
+  },
+  {
+   "id": 24,
+   "name": "Fire station 7 renovation",
+   "category": "Public Safety",
+   "cost_10k": 45,
+   "benefit": 47
+  },
+  {
+   "id": 25,
+   "name": "Electric-bus charging depot 10",
+   "category": "Transit",
+   "cost_10k": 99,
+   "benefit": 106
+  },
+  {
+   "id": 26,
+   "name": "Roof replacement, school 2",
+   "category": "Schools",
+   "cost_10k": 153,
+   "benefit": 279
+  },
+  {
+   "id": 27,
+   "name": "Branch library 9 expansion",
+   "category": "Libraries",
+   "cost_10k": 19,
+   "benefit": 19
+  },
+  {
+   "id": 28,
+   "name": "Emergency radio upgrade, zone 20",
+   "category": "Public Safety",
+   "cost_10k": 146,
+   "benefit": 229
+  },
+  {
+   "id": 29,
+   "name": "Signal upgrade at Oak Ave & 5th",
+   "category": "Roads",
+   "cost_10k": 31,
+   "benefit": 34
+  },
+  {
+   "id": 30,
+   "name": "Branch library 2 expansion",
+   "category": "Libraries",
+   "cost_10k": 103,
+   "benefit": 85
+  },
+  {
+   "id": 31,
+   "name": "Resurface Oak Ave",
+   "category": "Roads",
+   "cost_10k": 16,
+   "benefit": 16
+  },
+  {
+   "id": 32,
+   "name": "Street lighting on Harbor Dr",
+   "category": "Public Safety",
+   "cost_10k": 17,
+   "benefit": 40
+  },
+  {
+   "id": 33,
+   "name": "Trail extension, park 25",
+   "category": "Parks",
+   "cost_10k": 40,
+   "benefit": 23
+  },
+  {
+   "id": 34,
+   "name": "Solar canopy, civic site 26",
+   "category": "Energy",
+   "cost_10k": 8,
+   "benefit": 11
+  },
+  {
+   "id": 35,
+   "name": "Bus shelters, route 8",
+   "category": "Transit",
+   "cost_10k": 23,
+   "benefit": 39
+  },
+  {
+   "id": 36,
+   "name": "Resurface Cedar Ln",
+   "category": "Roads",
+   "cost_10k": 81,
+   "benefit": 122
+  },
+  {
+   "id": 37,
+   "name": "Emergency radio upgrade, zone 17",
+   "category": "Public Safety",
+   "cost_10k": 33,
+   "benefit": 57
+  },
+  {
+   "id": 38,
+   "name": "Splash pad, park 5",
+   "category": "Parks",
+   "cost_10k": 20,
+   "benefit": 26
+  },
+  {
+   "id": 39,
+   "name": "Safe crossing near school 6",
+   "category": "Schools",
+   "cost_10k": 12,
+   "benefit": 29
+  },
+  {
+   "id": 40,
+   "name": "Electric-bus charging depot 18",
+   "category": "Transit",
+   "cost_10k": 32,
+   "benefit": 48
+  },
+  {
+   "id": 41,
+   "name": "Electric-bus charging depot 9",
+   "category": "Transit",
+   "cost_10k": 56,
+   "benefit": 65
+  },
+  {
+   "id": 42,
+   "name": "LED retrofit, zone 13",
+   "category": "Energy",
+   "cost_10k": 27,
+   "benefit": 27
+  },
+  {
+   "id": 43,
+   "name": "Digital lab, branch 8",
+   "category": "Libraries",
+   "cost_10k": 35,
+   "benefit": 42
+  },
+  {
+   "id": 44,
+   "name": "Street lighting on Cedar Ln",
+   "category": "Public Safety",
+   "cost_10k": 36,
+   "benefit": 51
+  },
+  {
+   "id": 45,
+   "name": "Roof replacement, school 10",
+   "category": "Schools",
+   "cost_10k": 42,
+   "benefit": 70
+  },
+  {
+   "id": 46,
+   "name": "Bus lane on Pine Ave",
+   "category": "Transit",
+   "cost_10k": 86,
+   "benefit": 124
+  },
+  {
+   "id": 47,
+   "name": "Branch library 22 expansion",
+   "category": "Libraries",
+   "cost_10k": 18,
+   "benefit": 15
+  },
+  {
+   "id": 48,
+   "name": "Branch library 21 expansion",
+   "category": "Libraries",
+   "cost_10k": 61,
+   "benefit": 35
+  },
+  {
+   "id": 49,
+   "name": "Storm drain at Main St",
+   "category": "Water",
+   "cost_10k": 83,
+   "benefit": 167
+  },
+  {
+   "id": 50,
+   "name": "Splash pad, park 30",
+   "category": "Parks",
+   "cost_10k": 112,
+   "benefit": 100
+  },
+  {
+   "id": 51,
+   "name": "Replace water main under Pine Ave",
+   "category": "Water",
+   "cost_10k": 51,
+   "benefit": 83
+  },
+  {
+   "id": 52,
+   "name": "Bike lane on Bay St",
+   "category": "Roads",
+   "cost_10k": 21,
+   "benefit": 20
+  },
+  {
+   "id": 53,
+   "name": "Splash pad, park 7",
+   "category": "Parks",
+   "cost_10k": 41,
+   "benefit": 51
+  },
+  {
+   "id": 54,
+   "name": "Electric-bus charging depot 22",
+   "category": "Transit",
+   "cost_10k": 96,
+   "benefit": 67
+  },
+  {
+   "id": 55,
+   "name": "Emergency radio upgrade, zone 18",
+   "category": "Public Safety",
+   "cost_10k": 66,
+   "benefit": 137
+  },
+  {
+   "id": 56,
+   "name": "Branch library 21 expansion",
+   "category": "Libraries",
+   "cost_10k": 14,
+   "benefit": 13
+  },
+  {
+   "id": 57,
+   "name": "Safe crossing near school 23",
+   "category": "Schools",
+   "cost_10k": 147,
+   "benefit": 175
+  },
+  {
+   "id": 58,
+   "name": "Trail extension, park 28",
+   "category": "Parks",
+   "cost_10k": 28,
+   "benefit": 27
+  },
+  {
+   "id": 59,
+   "name": "Filter upgrade, plant 14",
+   "category": "Water",
+   "cost_10k": 35,
+   "benefit": 56
+  },
+  {
+   "id": 60,
+   "name": "Splash pad, park 10",
+   "category": "Parks",
+   "cost_10k": 342,
+   "benefit": 254
+  },
+  {
+   "id": 61,
+   "name": "Trail extension, park 4",
+   "category": "Parks",
+   "cost_10k": 33,
+   "benefit": 37
+  },
+  {
+   "id": 62,
+   "name": "Digital lab, branch 7",
+   "category": "Libraries",
+   "cost_10k": 32,
+   "benefit": 24
+  },
+  {
+   "id": 63,
+   "name": "Safe crossing near school 15",
+   "category": "Schools",
+   "cost_10k": 19,
+   "benefit": 36
+  },
+  {
+   "id": 64,
+   "name": "Resurface Main St",
+   "category": "Roads",
+   "cost_10k": 8,
+   "benefit": 15
+  },
+  {
+   "id": 65,
+   "name": "Branch library 28 expansion",
+   "category": "Libraries",
+   "cost_10k": 85,
+   "benefit": 101
+  },
+  {
+   "id": 66,
+   "name": "Branch library 19 expansion",
+   "category": "Libraries",
+   "cost_10k": 22,
+   "benefit": 27
+  },
+  {
+   "id": 67,
+   "name": "Playground renovation, park 12",
+   "category": "Parks",
+   "cost_10k": 45,
+   "benefit": 33
+  },
+  {
+   "id": 68,
+   "name": "Electric-bus charging depot 16",
+   "category": "Transit",
+   "cost_10k": 61,
+   "benefit": 91
+  },
+  {
+   "id": 69,
+   "name": "Filter upgrade, plant 11",
+   "category": "Water",
+   "cost_10k": 125,
+   "benefit": 185
+  },
+  {
+   "id": 70,
+   "name": "Bus shelters, route 8",
+   "category": "Transit",
+   "cost_10k": 5,
+   "benefit": 6
+  },
+  {
+   "id": 71,
+   "name": "Electric-bus charging depot 19",
+   "category": "Transit",
+   "cost_10k": 31,
+   "benefit": 48
+  },
+  {
+   "id": 72,
+   "name": "Filter upgrade, plant 26",
+   "category": "Water",
+   "cost_10k": 82,
+   "benefit": 130
+  },
+  {
+   "id": 73,
+   "name": "Bike lane on Cedar Ln",
+   "category": "Roads",
+   "cost_10k": 47,
+   "benefit": 35
+  },
+  {
+   "id": 74,
+   "name": "Signal upgrade at Mill Rd & 5th",
+   "category": "Roads",
+   "cost_10k": 24,
+   "benefit": 15
+  },
+  {
+   "id": 75,
+   "name": "Solar canopy, civic site 2",
+   "category": "Energy",
+   "cost_10k": 23,
+   "benefit": 26
+  },
+  {
+   "id": 76,
+   "name": "Trail extension, park 7",
+   "category": "Parks",
+   "cost_10k": 20,
+   "benefit": 24
+  },
+  {
+   "id": 77,
+   "name": "Branch library 5 expansion",
+   "category": "Libraries",
+   "cost_10k": 14,
+   "benefit": 11
+  },
+  {
+   "id": 78,
+   "name": "Resurface Main St",
+   "category": "Roads",
+   "cost_10k": 33,
+   "benefit": 20
+  },
+  {
+   "id": 79,
+   "name": "Solar canopy, civic site 2",
+   "category": "Energy",
+   "cost_10k": 7,
+   "benefit": 12
+  },
+  {
+   "id": 80,
+   "name": "Digital lab, branch 14",
+   "category": "Libraries",
+   "cost_10k": 14,
+   "benefit": 11
+  },
+  {
+   "id": 81,
+   "name": "Science lab, school 4",
+   "category": "Schools",
+   "cost_10k": 36,
+   "benefit": 52
+  },
+  {
+   "id": 82,
+   "name": "Splash pad, park 29",
+   "category": "Parks",
+   "cost_10k": 56,
+   "benefit": 65
+  },
+  {
+   "id": 83,
+   "name": "Electric-bus charging depot 5",
+   "category": "Transit",
+   "cost_10k": 58,
+   "benefit": 57
+  },
+  {
+   "id": 84,
+   "name": "Filter upgrade, plant 17",
+   "category": "Water",
+   "cost_10k": 51,
+   "benefit": 63
+  },
+  {
+   "id": 85,
+   "name": "Storm drain at Bay St",
+   "category": "Water",
+   "cost_10k": 24,
+   "benefit": 58
+  },
+  {
+   "id": 86,
+   "name": "Street lighting on Harbor Dr",
+   "category": "Public Safety",
+   "cost_10k": 11,
+   "benefit": 31
+  },
+  {
+   "id": 87,
+   "name": "Fire station 5 renovation",
+   "category": "Public Safety",
+   "cost_10k": 27,
+   "benefit": 44
+  },
+  {
+   "id": 88,
+   "name": "Bus shelters, route 18",
+   "category": "Transit",
+   "cost_10k": 70,
+   "benefit": 57
+  },
+  {
+   "id": 89,
+   "name": "Bus lane on Oak Ave",
+   "category": "Transit",
+   "cost_10k": 55,
+   "benefit": 76
+  },
+  {
+   "id": 90,
+   "name": "Storm drain at Cedar Ln",
+   "category": "Water",
+   "cost_10k": 65,
+   "benefit": 92
+  },
+  {
+   "id": 91,
+   "name": "Safe crossing near school 18",
+   "category": "Schools",
+   "cost_10k": 112,
+   "benefit": 140
+  },
+  {
+   "id": 92,
+   "name": "Safe crossing near school 25",
+   "category": "Schools",
+   "cost_10k": 196,
+   "benefit": 380
+  },
+  {
+   "id": 93,
+   "name": "Digital lab, branch 12",
+   "category": "Libraries",
+   "cost_10k": 38,
+   "benefit": 45
+  },
+  {
+   "id": 94,
+   "name": "LED retrofit, zone 21",
+   "category": "Energy",
+   "cost_10k": 85,
+   "benefit": 103
+  },
+  {
+   "id": 95,
+   "name": "Electric-bus charging depot 15",
+   "category": "Transit",
+   "cost_10k": 39,
+   "benefit": 70
+  },
+  {
+   "id": 96,
+   "name": "Bus shelters, route 24",
+   "category": "Transit",
+   "cost_10k": 13,
+   "benefit": 26
+  },
+  {
+   "id": 97,
+   "name": "Signal upgrade at Elm St & 5th",
+   "category": "Roads",
+   "cost_10k": 26,
+   "benefit": 42
+  },
+  {
+   "id": 98,
+   "name": "Storm drain at Main St",
+   "category": "Water",
+   "cost_10k": 26,
+   "benefit": 36
+  },
+  {
+   "id": 99,
+   "name": "Storm drain at Harbor Dr",
+   "category": "Water",
+   "cost_10k": 35,
+   "benefit": 73
+  }
+ ]
+}

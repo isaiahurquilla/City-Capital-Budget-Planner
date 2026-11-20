@@ -1,0 +1,203 @@
+{
+  "project": "P3 City Capital Budget Planner (0/1 knapsack)",
+  "notes": "reference.score = optimal total benefit (DP; cross-checked with meet-in-the-middle for n<=40 and brute force for n<=20). greedy_ratio_rule = value achieved by the best-ratio-first rule.",
+  "datasets": [
+    {
+      "file": "projects_n012.json",
+      "label": "small",
+      "n": 12,
+      "params": {
+        "seed": 3,
+        "style": "realistic"
+      },
+      "suitable": [
+        "bf",
+        "dnc",
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 359,
+        "budget_10k": 232,
+        "greedy_ratio_rule": 355
+      }
+    },
+    {
+      "file": "projects_n020.json",
+      "label": "small",
+      "n": 20,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "bf",
+        "dnc",
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 578,
+        "budget_10k": 381,
+        "greedy_ratio_rule": 562
+      }
+    },
+    {
+      "file": "projects_n032.json",
+      "label": "medium",
+      "n": 32,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "dnc",
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 1145,
+        "budget_10k": 724,
+        "greedy_ratio_rule": 1136
+      }
+    },
+    {
+      "file": "projects_n040.json",
+      "label": "medium",
+      "n": 40,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "dnc",
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 1349,
+        "budget_10k": 818,
+        "greedy_ratio_rule": 1343
+      }
+    },
+    {
+      "file": "projects_n040_corr.json",
+      "label": "medium",
+      "n": 40,
+      "params": {
+        "seed": 1,
+        "style": "correlated"
+      },
+      "suitable": [
+        "dnc",
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 1088,
+        "budget_10k": 818,
+        "greedy_ratio_rule": 1046
+      }
+    },
+    {
+      "file": "projects_n100.json",
+      "label": "large",
+      "n": 100,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 3531,
+        "budget_10k": 2091,
+        "greedy_ratio_rule": 3527
+      }
+    },
+    {
+      "file": "projects_n100_corr.json",
+      "label": "large",
+      "n": 100,
+      "params": {
+        "seed": 1,
+        "style": "correlated"
+      },
+      "suitable": [
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 2791,
+        "budget_10k": 2091,
+        "greedy_ratio_rule": 2784
+      }
+    },
+    {
+      "file": "projects_n1000.json",
+      "label": "large",
+      "n": 1000,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 36320,
+        "budget_10k": 21645,
+        "greedy_ratio_rule": 36319
+      }
+    },
+    {
+      "file": "projects_n1000_corr.json",
+      "label": "large",
+      "n": 1000,
+      "params": {
+        "seed": 1,
+        "style": "correlated"
+      },
+      "suitable": [
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 29135,
+        "budget_10k": 21645,
+        "greedy_ratio_rule": 29114
+      }
+    },
+    {
+      "file": "projects_n2000.json",
+      "label": "stress",
+      "n": 2000,
+      "params": {
+        "seed": 1,
+        "style": "realistic"
+      },
+      "suitable": [
+        "dp",
+        "greedy"
+      ],
+      "reference": {
+        "kind": "optimal",
+        "score": 72614,
+        "budget_10k": 43757,
+        "greedy_ratio_rule": 72614
+      }
+    }
+  ]
+}
