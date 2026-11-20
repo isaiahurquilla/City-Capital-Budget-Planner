@@ -32,7 +32,7 @@ def solve_dp(inst):
 
         take.append(decisions)
 
-        selected = []
+    selected = []
     amount = budget
 
     for i in range(n-1, -1, -1):
