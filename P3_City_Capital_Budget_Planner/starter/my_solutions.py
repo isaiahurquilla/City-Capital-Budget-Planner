@@ -10,21 +10,6 @@ Test your work from this folder:
 Rules: write the algorithms under study yourself (see the project brief for which library helpers are allowed).
 """
 
-def solve_bf(inst):
-    """Brute force (all 2^n subsets).
-
-    Return: a list of project ids to fund, e.g. [0, 4, 7].
-    """
-    raise NotImplementedError("write the bf technique here")
-
-
-def solve_dnc(inst):
-    """Divide-and-conquer (meet in the middle).
-
-    Return: a list of project ids to fund, e.g. [0, 4, 7].
-    """
-    raise NotImplementedError("write the dnc technique here")
-
 
 def solve_dp(inst):
     """Dynamic programming (0/1 knapsack table).
@@ -35,16 +20,30 @@ def solve_dp(inst):
 
 
 def solve_greedy(inst):
+    project_ids = list(range(inst["n"]))
+    # Calculate benefit/cost ratios for each project
+
+    project_ids.sort(
+        key=lambda i: inst["benefit"][i] / inst["cost"][i], reverse=True
+    )
+
+    selected = []
+    remaining_budget = inst["budget"]
+
+    for i in project_ids:
+        if inst["cost"][i] <= remaining_budget:
+            selected.append(i)
+            remaining_budget -= inst["cost"][i]
+
+    return selected
     """Greedy (best benefit/cost ratio first).
 
     Return: a list of project ids to fund, e.g. [0, 4, 7].
     """
-    raise NotImplementedError("write the greedy technique here")
+    
 
 
 TECHNIQUES = {
-    "bf": solve_bf,
-    "dnc": solve_dnc,
     "dp": solve_dp,
     "greedy": solve_greedy,
 }
