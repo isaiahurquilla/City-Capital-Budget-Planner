@@ -5,18 +5,42 @@ Implement the TWO techniques assigned to you (the keys are listed in TECHNIQUES 
 Every function receives the loaded instance (a dict; its fields are described at the top of problem.py)
 and must return: a list of project ids to fund, e.g. [0, 4, 7].
 
-Test your work from this folder:
+Test your work from this folder:Greedy algorithm testing:
     python run_checks.py my_solutions.py --only <key>[,<key>]      e.g.  --only bf,dnc
 Rules: write the algorithms under study yourself (see the project brief for which library helpers are allowed).
 """
 
 
 def solve_dp(inst):
-    """Dynamic programming (0/1 knapsack table).
+    n = inst["n"]
+    budget = inst["budget"]
 
-    Return: a list of project ids to fund, e.g. [0, 4, 7].
-    """
-    raise NotImplementedError("write the dp technique here")
+    # best[amount] = best benefit achievable with that amount of budget
+    best = [0] * (budget + 1)
+    take = []
+
+    for i in range(n):
+        cost = inst["cost"][i]
+        benefit = inst["benefit"][i]
+        decisions = bytearray(budget+1)
+
+        for amount in range(budget, cost - 1, -1):
+            new_benefit = best[amount - cost] + benefit
+            if new_benefit > best[amount]:
+                best[amount] = new_benefit
+                decisions[amount] = 1
+
+        take.append(decisions)
+
+        selected = []
+    amount = budget
+
+    for i in range(n-1, -1, -1):
+        if take[i][amount]:
+            selected.append(i)
+            amount -= inst["cost"][i]
+    selected.reverse()
+    return selected
 
 
 def solve_greedy(inst):
@@ -36,10 +60,6 @@ def solve_greedy(inst):
             remaining_budget -= inst["cost"][i]
 
     return selected
-    """Greedy (best benefit/cost ratio first).
-
-    Return: a list of project ids to fund, e.g. [0, 4, 7].
-    """
     
 
 
