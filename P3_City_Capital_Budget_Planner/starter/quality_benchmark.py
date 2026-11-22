@@ -8,7 +8,7 @@ from my_solutions import solve_greedy, solve_dp
 DATA_FOLDER = Path(__file__).parent.parent / "data"
 sys.path.append(str(DATA_FOLDER))
 
-from generate_data import generate
+from generate_data import generate #type: ignore
 
 
 def make_instance(raw):
