@@ -31,6 +31,9 @@ python run_checks.py my_solutions.py --only dp
 python test_edge_cases.py
 python benchmark.py
 python quality_benchmark.py
+python scaling_benchmark.py
+python make_plots.py
+python quality_plot.py
 ```
 
 ## Data Sources

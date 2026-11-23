@@ -13,19 +13,23 @@ Rules: write the algorithms under study yourself (see the project brief for whic
 
 def solve_dp(inst):
     n = inst["n"]
-    budget = inst["budget"]
+    budget = inst["budget"] 
 
-    # best[amount] = best benefit achievable with that amount of budget
+    # best[amount] stores the highest benefit found with a budget limit of amount.
     best = [0] * (budget + 1)
+    # Stores decisions for traceback; removing this saves memory but would prevent returning the selected project IDs.
     take = []
 
+    # Process every project once.
     for i in range(n):
         cost = inst["cost"][i]
-        benefit = inst["benefit"][i]
+        benefit = inst["benefit"][i] 
+        # bytearray uses about one byte per decision and less memory than a normal Python list.
         decisions = bytearray(budget+1)
-
+        # Keep this loop moving backward. Moving forward would allow the same project to be selected more than once.
         for amount in range(budget, cost - 1, -1):
             new_benefit = best[amount - cost] + benefit
+            # Using > keeps the previous selection when benefits are tied.
             if new_benefit > best[amount]:
                 best[amount] = new_benefit
                 decisions[amount] = 1
@@ -35,6 +39,7 @@ def solve_dp(inst):
     selected = []
     amount = budget
 
+    # Trace backward through the saved decisions to recover project IDs.
     for i in range(n-1, -1, -1):
         if take[i][amount]:
             selected.append(i)
@@ -47,6 +52,8 @@ def solve_greedy(inst):
     project_ids = list(range(inst["n"]))
     # Calculate benefit/cost ratios for each project
 
+    # Change this key only if testing a different greedy selection rule.
+    # The current rule ranks projects by benefit received per unit of cost.
     project_ids.sort(
         key=lambda i: inst["benefit"][i] / inst["cost"][i], reverse=True
     )
@@ -58,11 +65,13 @@ def solve_greedy(inst):
         if inst["cost"][i] <= remaining_budget:
             selected.append(i)
             remaining_budget -= inst["cost"][i]
+        # Continue after a project does not fit because a later,
+        # less expensive project may still fit.    
 
     return selected
     
 
-
+# run_checks.py uses these exact keys to find the solution functions
 TECHNIQUES = {
     "dp": solve_dp,
     "greedy": solve_greedy,

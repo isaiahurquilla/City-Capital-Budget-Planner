@@ -3,14 +3,18 @@ import matplotlib.pyplot as plt
 
 
 def read_csv(filename):
+    # Returns each CSV row as a dictionary using the header names as keys.
     with open(filename, newline="") as file:
         return list(csv.DictReader(file))
 
 
 def dp_scaling_plots():
+    # scaling_results.csv must exist before this function runs.
     rows = read_csv("scaling_results.csv")
 
+    # Keep only the experiment where n changes and budget stays fixed.
     change_n = [r for r in rows if r["experiment"] == "change_n"]
+    # Convert n to an integer so the rows are sorted numerically.
     change_n.sort(key=lambda r: int(r["n"]))
 
     n_values = [int(r["n"]) for r in change_n]
@@ -23,12 +27,15 @@ def dp_scaling_plots():
     plt.ylabel("Median runtime (seconds)")
     plt.grid(True)
     plt.tight_layout()
+    # Running the script again replaces the previous image.
     plt.savefig("dp_runtime_vs_n.png")
     plt.close()
 
+    # Keep only the experiment where budget changes and n stays fixed.
     change_budget = [
         r for r in rows if r["experiment"] == "change_budget"
     ]
+    # Convert budget to an integer so the rows are sorted numerically.
     change_budget.sort(key=lambda r: int(r["budget"]))
 
     budgets = [int(r["budget"]) for r in change_budget]
@@ -41,13 +48,16 @@ def dp_scaling_plots():
     plt.ylabel("Median runtime (seconds)")
     plt.grid(True)
     plt.tight_layout()
+    # Running the script again replaces the previous image.
     plt.savefig("dp_runtime_vs_budget.png")
     plt.close()
 
 
 def comparison_plots():
+    # benchmark_results.csv must exist before this function runs.
     rows = read_csv("benchmark_results.csv")
 
+    # Shorten the dataset filenames so they fit on the graph.
     labels = [
         r["dataset"].replace("projects_", "").replace(".json", "")
         for r in rows
@@ -62,6 +72,7 @@ def comparison_plots():
     plt.ylabel("Benefit loss (%)")
     plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
+    # Running the script again replaces the previous image.
     plt.savefig("greedy_loss.png")
     plt.close()
 
@@ -88,6 +99,8 @@ def comparison_plots():
         width,
         label="DP"
     )
+    # Keep the logarithmic scale because greedy and DP runtimes
+    # differ too much to display clearly on a normal scale.
     plt.yscale("log")
     plt.title("Greedy and DP Runtime Comparison")
     plt.xlabel("Dataset")
@@ -95,6 +108,7 @@ def comparison_plots():
     plt.xticks(x, labels, rotation=45, ha="right")
     plt.legend()
     plt.tight_layout()
+    # Running the script again replaces the previous image.
     plt.savefig("runtime_comparison.png")
     plt.close()
 
@@ -109,6 +123,6 @@ def main():
     print(" greedy_loss.png")
     print(" runtime_comparison.png")
 
-
+# Prevent the plots from being created when this file is imported.
 if __name__ == "__main__":
     main()

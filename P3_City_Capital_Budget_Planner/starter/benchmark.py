@@ -6,8 +6,9 @@ import csv
 from problem import load_instance
 from my_solutions import solve_greedy, solve_dp
 
-
+# This path works when benchmark.py remains inside the starter folder.
 DATA_FOLDER = Path(__file__).parent.parent / "data"
+# Increase RUNS for more stable timings, but the benchmark will take longer
 RUNS = 5
 
 
@@ -23,12 +24,14 @@ def median_time(function, inst):
         function(inst)
         times.append(perf_counter() - start)
 
+    # Median reduces the effect of unusually fast or slow runs.
     return median(times)
 
 
 def main():
     results = []
 
+    # Change the file pattern here to benchmark a different group of datasets.
     for path in sorted(DATA_FOLDER.glob("projects_*.json")):
         inst = load_instance(path)
 
@@ -41,18 +44,23 @@ def main():
         greedy_time = median_time(solve_greedy, inst)
         dp_time = median_time(solve_dp, inst)
 
+        # Keep this check to avoid division by zero on empty instances.
         if dp_score == 0:
             loss = 0
         else:
             loss = ((dp_score - greedy_score) / dp_score) * 100
 
-        # Main-loop operation counts
+        # These are main-loop operation counts.
+        # Greedy's count does not include sorting comparisons.
         greedy_operations = inst["n"]
+        # Each term counts the number of budget values checked
+        # for one project in the DP inner loop
         dp_operations = sum(
             max(0, inst["budget"] - cost + 1)
             for cost in inst["cost"]
         )
 
+        # Keep this order consistent with the CSV header below.
         results.append([
             path.name,
             inst["n"],
@@ -75,8 +83,10 @@ def main():
             "DP time:", f"{dp_time:.6f}"
         )
 
+    # This replaces the previous CSV each time the benchmark runs.
     with open("benchmark_results.csv", "w", newline="") as file:
         writer = csv.writer(file)
+        # Keep these columns in the same order as results.append().
         writer.writerow([
             "dataset",
             "n",
@@ -93,6 +103,6 @@ def main():
 
     print("\nResults saved to benchmark_results.csv")
 
-
+# Prevent the benchmark from running when this file is imported.
 if __name__ == "__main__":
     main()
